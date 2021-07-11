@@ -1,0 +1,40 @@
+// -------------------------------
+//     TYPOGRAPHY VARIABLES
+// -------------------------------
+
+// *--------- TYPOGRAPHY ---------*
+$base__font-family: "Montserrat", Helvetica, Tahoma, sans-serif; // 400, 700
+$base__font-size: 1rem;
+$base__font-weight: 400;
+$base__font-weight--bold: 700;
+
+// $secondary__font-family: "Dosis", Arial, sans-serif; // 400, 700
+
+// $heading__font-size--small: 18px;
+// $heading__font-size--medium: 24px;
+// $heading__font-size--large: 30px;
+// $heading__font-size--x-large: 36px;
+
+// $rte__font-size: 14px;
+// $rte__line-height: 24px;
+
+// *--------- COLORS ---------*
+$base__text-color: #eee;
+
+// -------------------------------
+//     TYPOGRAPHY STYLES
+// -------------------------------
+
+// *--------- GENERAL ---------*
+html {
+    font-size: 62.5%;
+}
+body {
+    font: $base__font-weight #{$base__font-size}/ 1 $base__font-family;
+    font-family: "Montserrat", sans-serif;
+    color: $base__text-color;
+}
+
+strong {
+    font-weight: $base__font-weight--bold;
+}
