@@ -3,6 +3,10 @@
     max-width: 1200px;
     text-align: center;
     padding: 2.5rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 .main-header {
     font-size: 3.2rem;
@@ -21,6 +25,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+    padding: 0px;
     margin: 0px 2.8rem 3rem 2.8rem;
 }
 .main-list-item {
@@ -53,4 +58,17 @@
 .fa-star,
 .main-rating-p {
     font-size: 1.2rem;
+}
+@media screen and (max-width: 920px) {
+    .main-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width: 347px) {
+    .main-list {
+        align-items: center;
+    }
 }

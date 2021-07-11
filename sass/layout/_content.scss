@@ -1,7 +1,11 @@
 .content-info {
+    background-image: url(../images/green_cricle_white.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -20%;
+    width: 100vw;
     margin: 0 auto;
     overflow-x: hidden;
-    width: 100vw;
 }
 .content-info-header {
     text-align: center;
@@ -9,14 +13,8 @@
     margin: 3rem 0rem;
 }
 .content-info-cards {
-    background-image: url(../images/green_cricle_white.svg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    // background-color: #58b792;
     margin: 0 auto;
-    // margin-left: -8px;
-    width: 100vw;
-    // max-width: 1200px;
+    width: calc(100vw - 60px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,7 +23,9 @@
 
 .content-info-card {
     background-color: $base__dark-color;
-    width: 330px;
+    width: 28%;
+    max-width: 330px;
+    min-width: 266px;
     height: 402px;
     padding: 24px;
     text-align: center;
@@ -37,6 +37,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 1;
 }
 .content-info-card:first-child {
     margin-left: 0rem;
@@ -75,4 +76,17 @@
 .content-info-card-link {
     text-decoration: none;
     color: $main-color;
+}
+
+@media screen and (max-width: 920px) {
+    .content-info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-info {
+        background-position-y: 750%;
+    }
+    .content-info-cards {
+        margin-bottom: 120px;
+    }
 }
