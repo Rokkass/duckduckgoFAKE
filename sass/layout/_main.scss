@@ -1,0 +1,56 @@
+.main {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 2.5rem 0rem;
+}
+.main-header {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin: 0 2.8rem;
+}
+.main-p {
+    font-size: 1.7rem;
+    padding: 15px 0px;
+    line-height: 2.4rem;
+    margin: 0 2.8rem;
+}
+.main-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0px 2.8rem 3rem 2.8rem;
+}
+.main-list-item {
+    font-size: 1.7rem;
+    font-weight: $base__font-weight--bold;
+}
+.fa-check-circle {
+    padding-right: 1rem;
+    color: $main-color;
+}
+.main-button {
+    font-size: 1.4rem;
+    background-color: $main-color;
+    cursor: pointer;
+    width: 252px;
+    height: 44px;
+    border: 0px;
+    border-radius: 10px;
+    color: $base__lighter-color;
+    font-weight: $base__font-weight--bold;
+}
+.main-rating {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+.fa-star,
+.main-rating-p {
+    font-size: 1.2rem;
+}

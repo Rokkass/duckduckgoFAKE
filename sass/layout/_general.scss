@@ -1,0 +1,36 @@
+// -------------------------------
+//     GENERAL VARIABLES
+// -------------------------------
+
+// *--------- METRICS ---------*
+$site-wrapper_width: 100vw;
+$site-wrapper_width--inner: 1170px;
+
+// *--------- TYPOGRAPHY ---------*
+
+// *--------- COLORS ---------*
+$base__darker-color: #1c1c1c;
+$base__dark-color: #2e2e2e;
+$base__light-color: #ccc;
+$base__lighter-color: #eee;
+$main-color: #678fff;
+
+// ----------------------------
+//     GENERAL STYLES
+// ----------------------------
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    background: $base__darker-color;
+    color: $base__light-color;
+}
+
+.site-wrapper {
+    width: $site-wrapper_width;
+    background-color: $base__darker-color;
+}
