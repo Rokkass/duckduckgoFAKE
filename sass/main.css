@@ -858,6 +858,7 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  min-height: 625px;
   color: #fff;
 }
 
