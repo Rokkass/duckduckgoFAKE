@@ -858,7 +858,7 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  min-height: 625px;
+  min-height: 630px;
   color: #fff;
 }
 
@@ -866,7 +866,6 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 100px;
-  min-height: 630px;
   max-width: 550px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
