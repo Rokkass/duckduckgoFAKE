@@ -11,10 +11,18 @@ function show(e) {
     e.style.cssText = "display:block; visibility:visible;";
 }
 
-btn_menu.addEventListener("click", () => {
-    show(list_menu);
-});
+// btn_menu.addEventListener("click", () => {
+//     show(list_menu);
+// });
 
+btn_menu.addEventListener("click", () => {
+    const state = window.getComputedStyle(list_menu).display;
+    if (state == "none") {
+        show(list_menu);
+    } else {
+        hide(list_menu);
+    }
+});
 cross_menu.addEventListener("click", () => {
     hide(list_menu);
 });
