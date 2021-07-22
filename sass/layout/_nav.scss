@@ -9,6 +9,12 @@
 }
 .nav-socialmedia_list {
     display: none;
+    visibility: hidden;
+}
+
+.nav-socialmedia_list-visible {
+    display: block;
+    visibility: visible;
 }
 .nav-socialmedia {
     background: none;
@@ -18,12 +24,11 @@
     height: 33px;
     position: relative;
 
-    &:hover .fa-bullhorn,
-    &:hover .fa-caret-down {
+    .fa-bullhorn,
+    .fa-caret-down {
         color: $base__lighter-color;
     }
-    &:hover .nav-socialmedia_list {
-        display: block;
+    .nav-socialmedia_list {
         background-color: $base__dark-color;
         width: 146px;
         height: 157px;
@@ -111,8 +116,8 @@
     position: relative;
     border-radius: 3px;
 
-    &:hover .nav-menu_aside {
-        background-color: rgba(255, 255, 255, 0.2);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
     }
     &:hover .nav-menu_inner {
         background-color: $base__lighter-color;
@@ -168,7 +173,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: normal;
         text-transform: uppercase;
         margin-bottom: 2rem;
@@ -176,6 +181,10 @@
     .fa-times {
         display: inline-block;
         font-size: 2rem;
+        cursor: pointer;
+        &:hover {
+            color: $base__darker-color;
+        }
     }
     a {
         display: block;
@@ -183,8 +192,8 @@
         text-decoration: none;
         color: $base__light-color;
         margin-bottom: 1rem;
+        &:hover {
+            text-decoration: underline;
+        }
     }
-}
-.nav-menu:hover + .nav-menu_aside {
-    display: block;
 }

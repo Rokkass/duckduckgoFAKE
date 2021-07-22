@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    a {
+        color: $base__light-color;
+        text-decoration: none;
+    }
 }
 .main-header {
     font-size: 3.2rem;

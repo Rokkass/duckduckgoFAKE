@@ -390,6 +390,12 @@ body {
 
 .nav-socialmedia_list {
   display: none;
+  visibility: hidden;
+}
+
+.nav-socialmedia_list-visible {
+  display: block;
+  visibility: visible;
 }
 
 .nav-socialmedia {
@@ -401,13 +407,12 @@ body {
   position: relative;
 }
 
-.nav-socialmedia:hover .fa-bullhorn,
-.nav-socialmedia:hover .fa-caret-down {
+.nav-socialmedia .fa-bullhorn,
+.nav-socialmedia .fa-caret-down {
   color: #eee;
 }
 
-.nav-socialmedia:hover .nav-socialmedia_list {
-  display: block;
+.nav-socialmedia .nav-socialmedia_list {
   background-color: #2e2e2e;
   width: 146px;
   height: 157px;
@@ -516,8 +521,8 @@ body {
   border-radius: 3px;
 }
 
-.nav-menu_box:hover .nav-menu_aside {
-  background-color: rgba(255, 255, 255, 0.2);
+.nav-menu_box:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-menu_box:hover .nav-menu_inner {
@@ -585,7 +590,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -594,6 +599,11 @@ body {
 .nav-menu_aside .fa-times {
   display: inline-block;
   font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-menu_aside .fa-times:hover {
+  color: #1c1c1c;
 }
 
 .nav-menu_aside a {
@@ -604,8 +614,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.nav-menu:hover + .nav-menu_aside {
-  display: block;
+.nav-menu_aside a:hover {
+  text-decoration: underline;
 }
 
 .header-wrapper {
@@ -657,6 +667,7 @@ body {
   height: 4.6rem;
   font-size: 2rem;
   padding: 0px 50px 0px 20px;
+  text-overflow: ellipsis;
   color: #ccc;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -681,6 +692,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main a {
+  color: #ccc;
+  text-decoration: none;
 }
 
 .main-header {
@@ -793,7 +809,7 @@ body {
 .content-info-header {
   text-align: center;
   font-size: 1.7rem;
-  margin: 3rem 0rem;
+  margin: 3rem 2.8rem;
 }
 
 .content-info-cards {
